@@ -1,1 +1,170 @@
-Hello
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酷達無人車控制與機器學習課程</title>
+    <!-- 引入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Inter 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* 淺灰色背景 */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4a90e2, #50b3e7); /* 藍色漸層 */
+        }
+        .feature-icon {
+            color: #4a90e2; /* 藍色 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header 區塊 -->
+    <header class="gradient-bg text-white py-8 md:py-12 shadow-lg">
+        <div class="container text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">酷達無人車控制與機器學習課程</h1>
+            <p class="text-lg md:text-xl opacity-90">掌握未來科技，從「智」造開始！</p>
+            <p class="mt-4 text-sm md:text-base opacity-80">本課程旨在為不同程度的學生提供無人車控制與機器學習的全面學習體驗。</p>
+        </div>
+    </header>
+
+    <!-- 課程簡介區塊 -->
+    <section class="py-12">
+        <div class="container text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">開啟你的智慧移動之旅</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                從基礎手動控制到高階機器學習，酷達無人車課程涵蓋 14 個核心模組，讓你逐步成為未來的工程師與創新者。
+            </p>
+            <img src="https://placehold.co/800x450/e0e7ff/333333?text=CoolCar+Robot" alt="" class="rounded-lg shadow-lg mx-auto w-full md:w-3/4 lg:w-2/3 object-cover">
+        </div>
+    </section>
+
+    <!-- 課程特色區塊 -->
+    <section class="bg-blue-50 py-12">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">課程亮點</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl mb-4 feature-icon">🚀</div>
+                    <h3 class="text-xl font-semibold mb-3">理論與實作並重</h3>
+                    <p class="text-gray-600">透過實際操作無人車，將抽象理論轉化為具體應用。</p>
+                </div>
+                <div class="card text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl mb-4 feature-icon">🧠</div>
+                    <h3 class="text-xl font-semibold mb-3">漸進式學習路徑</h3>
+                    <p class="text-gray-600">從基本控制到深度學習，循序漸進，適合不同程度的學習者。</p>
+                </div>
+                <div class="card text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl mb-4 feature-icon">💡</div>
+                    <h3 class="text-xl font-semibold mb-3">未來趨勢技術</h3>
+                    <p class="text-gray-600">掌握自動駕駛、物聯網、AI 視覺辨識等關鍵技能。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 課程模組與適合對象區塊 -->
+    <section class="py-12">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-10 text-gray-800">為不同階段的你量身打造</h2>
+
+            <!-- 基本控制模式 -->
+            <div class="card flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <img src="https://placehold.co/600x400/ffe0e0/333333?text=Basic+Control" alt="" class="rounded-lg shadow-md w-full object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">一、基本控制模式</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        學習無人車最核心的基礎操作，理解車輛如何根據指令行動。適合所有初學者建立對無人車的初步認知。
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>手動模式 (Manual Mode)</li>
+                        <li>姿態模式 (Acro Mode) / 循線模式</li>
+                        <li>定向模式 (Steer Mode)</li>
+                    </ul>
+                    <p class="mt-4 text-blue-600 font-semibold">建議大學生學習時數：3-4 小時</p>
+                </div>
+            </div>
+
+            <!-- 自動駕駛模式 -->
+            <div class="card flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
+                    <img src="https://placehold.co/600x400/e0ffea/333333?text=Autonomous+Driving" alt="" class="rounded-lg shadow-md w-full object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">二、自動駕駛模式</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        探索無人車如何執行預設任務與自主導航，理解自動化的核心邏輯與應用。
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>自動模式 (Auto Mode) / 任務模式</li>
+                        <li>返航模式 (Return Mode) / RTL</li>
+                        <li>循跡模式 (Follow Me Mode) / 跟隨模式</li>
+                        <li>地理圍欄模式 (Geofence Mode)</li>
+                    </ul>
+                    <p class="mt-4 text-blue-600 font-semibold">建議大學生學習時數：3-6 小時</p>
+                </div>
+            </div>
+
+            <!-- 進階應用與機器學習功能 -->
+            <div class="card flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                    <img src="https://placehold.co/600x400/fff0e0/333333?text=Machine+Learning" alt="" class="rounded-lg shadow-md w-full object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">三、進階應用與機器學習功能</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        深入無人車最前沿的 AI 技術，學習如何讓無人車「看見」、思考並做出決策。
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>電力管理員 - 自動回充與能源補充</li>
+                        <li>障礙物迴避 (Obstacle Avoidance)</li>
+                        <li>數據記錄與即時監控</li>
+                        <li>障礙物偵測模型訓練與部署</li>
+                        <li>視覺基礎：車道線辨識</li>
+                        <li>深度學習：車道線追蹤模型訓練</li>
+                        <li>模型整合與決策邏輯</li>
+                    </ul>
+                    <p class="mt-4 text-blue-600 font-semibold">建議大學生學習時數：3-8 小時</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 呼籲行動區塊 -->
+    <section class="gradient-bg text-white py-12 text-center">
+        <div class="container">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">立即加入，創造你的未來！</h2>
+            <p class="text-lg mb-8">無論你是國小生、國中生、高中生還是大學生，都能在這裡找到屬於你的學習路徑。</p>
+            <button class="bg-white text-blue-600 hover:bg-blue-100 font-bold py-3 px-8 rounded-full shadow-lg transition-colors duration-300 text-lg">
+                了解更多課程詳情
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer 區塊 -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container text-center text-sm">
+            <p>&copy; 2025 酷達無人車課程. All rights reserved.</p>
+            <p class="mt-2">聯絡我們：info@coolcar.com</p>
+        </div>
+    </footer>
+</body>
+</html>
